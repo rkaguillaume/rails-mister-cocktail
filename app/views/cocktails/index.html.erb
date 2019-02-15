@@ -1,7 +1,7 @@
 <div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://www.maxim.com/.image/t_share/MTUwODg5MTM1MDY0NzU0MDA5/cocktails-promo.jpg);">
     <div class="container">
-      <h1>Cocktails Master <strong>tech skills</strong> to <strong>creative people</strong>!</h1>
-      <p>Change your life and learn to code at one of our campuses around the world.</p>
+      <h1>Cocktails Master <strong>awesome recipes</strong> to <strong>creative people</strong>!</h1>
+      <p>Change your life and learn how to create aweome cocktail for all your friends</p>
       <%= link_to "Add a cocktail", new_cocktail_path, class: 'btn btn-primary' %>
     </div>
   </div>
@@ -11,7 +11,7 @@
   <div class="row">
     <% @cocktails.each do |cocktail| %>
     <div class="col-xs-6 col-sm-4">
-      <div class="card-image" style="background-image:url(https://cache.marieclaire.fr/data/photo/w1000_ci/54/mojito.jpg);"></div>
+      <div class="card-image" style="background-image:url('<%= cl_image_path cocktail.photo, height: 300, width: 400, crop: :fill %>');"></div>
       <div class="card-content">
         <h3><%= cocktail.name %></h3>
       </div>
@@ -22,3 +22,4 @@
     <% end %>
   </div>
 </div>
+
