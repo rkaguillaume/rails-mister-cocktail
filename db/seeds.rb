@@ -4,7 +4,6 @@ Ingredient.create(name: "ice")
 Ingredient.create(name: "mint leaves")
 
 Cocktail.destroy_all
-
  url = "http://suzi-pratt.com/wp-content/uploads/2017/11/Stranger-Highball-Cocktail-Photography-9.jpg"
  cocktail = Cocktail.new(name: 'Cuba Libre')
  cocktail.remote_photo_url = url
