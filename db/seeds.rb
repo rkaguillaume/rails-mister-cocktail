@@ -9,7 +9,7 @@ Cocktail.destroy_all
  cocktail.remote_photo_url = url
 cocktail.save
 
- url = "https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
+url = "https://images.unsplash.com/photo-1536935338788-846bb9981813?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60"
  cocktail = Cocktail.new(name: 'Tekila Paf')
  cocktail.remote_photo_url = url
   cocktail.save
